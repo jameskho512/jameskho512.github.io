@@ -6083,6 +6083,10 @@ button.bg-danger:focus {
   background-color: #bd2130 !important;
 }
 
+.bg-custom {
+  background-color: #DDDDDD;
+}
+
 .bg-light {
   background-color: #eeeeee !important;
 }
@@ -8698,6 +8702,10 @@ button.bg-dark:focus {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.text-bs {
+  font-family: Bahnschrift, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .text-justify {
   text-align: justify !important;
 }
@@ -8802,6 +8810,10 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
+}
+
+.text-grey {
+  color: #8A8FAE !important;
 }
 
 .text-primary {

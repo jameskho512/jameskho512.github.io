@@ -15,7 +15,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-
+    <link href="css/half-slider.css" rel="stylesheet">
+	  
   </head>
 
   <body id="page-top">
@@ -47,58 +48,112 @@
     </nav>
 
     <!-- Blue Header -->
-    <header class="bg-primary text-white">
-      <div class="container text-center">
+    <header class="bg-primary">
+      <div class="container text-center text-white">
         <h1>James Ho</h1>
         <p class="lead">4th Year Mechanical Engineering Student<br>
-						UC Santa Barbara</p>
+						UC Santa Barbara<br><br>
+
+* * Website is still a work in progress, stay tuned for updates soon! * *</p>
       </div>
     </header>
 
     <!-- About -->
-    <section id="about">
-      <div class="container">
-          <div class="col-lg-12 mx-auto">
-            <h2>About Me</h2>
-            <p class="lead">I am a fourth year mechanical engineering student at UC Santa Barbara, specializing in CAD design and machine shop fabrication. Currently interning as a Mechanical Engineer at Santa Barbara Infrared, inc.</p>
-          </div>
-        </div>
+    <section id="about" class="bg-custom">
+      	<div class="container">
+        	<div class="row">
+         	 <div class="col-lg-12 mx-auto ">
+          	  <h2>About Me</h2>
+          	  <p class="lead">I am a fourth year mechanical engineering student at UC Santa Barbara, specializing in CAD design and machine shop fabrication. Currently interning as a Mechanical Engineer at Santa Barbara Infrared, inc.</p>
+			  </div>
+			</div>
+		  </div>
     </section>
 
     <!-- Resume -->
-    <section id="resume" class="bg-light">
+    <section id="resume" class="bg-custom">
       <div class="container">
         <div class="row">
 <!--        <div class="text-center">-->
           <div class="col-lg-12 mx-auto">
             <h2>Resume</h2>
-<!--            <p class="lead">Hello World</p>-->
+            <p class="text-center">
 			  <a href="jhoresume.pdf">
                 <img href="jhoresume.pdf" width="50%" src="img/jhoresume.png">
+				  </p>
               </a>
             </div>
 <!--		  </div>-->
         </div>
       </div>
     </section>
-
+	  
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="bg-custom font-family-sans-serif">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-0">
-            <h2>Projects</h2>
-            <h5>Electric Bicycle </h5><br>
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe width="1663" height="739" src="https://www.youtube.com/embed/dQw4w9WgXcQ?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>	
-				</div>
+            <h2>Project Showcase</h2>
+			  
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('https://i.imgur.com/nmAgAWc.png')">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h3>Electric Bicycle</h3>
+<!--              <p>Designed and built a fully functional electric bicycle that runs at over 3,500 watts.</p>-->
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item text-center">
+			  <video width="900" height="550" controls>
+  <source src="video/bike.mp4" type="video/mp4">
+</video>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Electric Bicycle</h3>
+<!--              <p></p>-->
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item text-center">
+			  <video width="900" height="550" controls>
+  <source src="video/bird.mp4" type="video/mp4">
+</video>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Dancing Robot Bird</h3>
+<!--              <p></p>-->
+            </div>
+          </div>
+          <!-- Slide Four - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('img/whiteboard.png')">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h3>Automatic White Board Eraser</h3>
+<!--              <p>Follows the black line across the ramp</p>-->
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
           </div>
         </div>
       </div>
     </section>
 	
     <!-- Contact -->
-	<section id="contact" class="bg-light">
+	<section id="contact" class="bg-custom">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-0">
@@ -112,7 +167,7 @@
     </section>
 	
     <!-- Footer -->
-    <footer class="py-4 bg-dark">
+    <footer class="py-4 bg-custom">
       <div class="container">
 		  <p class="m-0 text-center text-white">&copy; James Ho 2018</p>
 		  <p class="m-0 text-center text-white"></p>
