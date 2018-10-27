@@ -6454,6 +6454,11 @@ button.bg-dark:focus {
   border: 0;
 }
 
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
 .embed-responsive-21by9::before {
   padding-top: 42.857143%;
 }
