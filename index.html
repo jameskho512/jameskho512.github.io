@@ -94,15 +94,71 @@
         <div class="row">
           <div class="col-lg-12 mx-0">
             <h2>Project Showcase</h2>
-			  
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#bird">VIDEO - Dancing Robot Bird</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="bird" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+<!--          <h4 class="modal-title">Modal Header</h4>-->
+        </div>
+        <div class="modal-body">
+			    <video width="1200" height="550" controls>
+				  <source src="video/bird.mp4" type="video/mp4">
+				</video>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+	        </div>
+      </div>	  
+<br>
+<br>	  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#bike">VIDEO - Electric Bicycle</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="bike" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+<!--          <h4 class="modal-title">Modal Header</h4>-->
+        </div>
+        <div class="modal-body">
+			    <video width="1200" height="550" controls>
+				  <source src="video/bike.mp4" type="video/mp4">
+				</video>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+		
+    </div>
+  </div>
+<br>
+<br>
+
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
         </ol>
         <div class="carousel-inner" role="listbox">
+			
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('https://i.imgur.com/nmAgAWc.png')">
             <div class="carousel-caption d-none d-md-block text-dark">
@@ -110,26 +166,9 @@
 <!--              <p>Designed and built a fully functional electric bicycle that runs at over 3,500 watts.</p>-->
             </div>
           </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item text-center">
-			  <video width="900" height="550" controls>
-  <source src="video/bike.mp4" type="video/mp4">
-</video>
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Electric Bicycle</h3>
-<!--              <p></p>-->
-            </div>
-          </div>
+
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item text-center">
-			  <video width="900" height="550" controls>
-  <source src="video/bird.mp4" type="video/mp4">
-</video>
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Dancing Robot Bird</h3>
-<!--              <p></p>-->
-            </div>
-          </div>
+
           <!-- Slide Four - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('img/whiteboard.png')">
             <div class="carousel-caption d-none d-md-block text-dark">
@@ -147,10 +186,13 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+			  
+			  
           </div>
         </div>
       </div>
     </section>
+
 	
     <!-- Contact -->
 	<section id="contact" class="bg-custom">
