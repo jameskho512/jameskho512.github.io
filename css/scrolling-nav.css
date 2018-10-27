@@ -5,7 +5,7 @@
  */
 
 header {
-  padding: 156px 0 100px;
+  padding: 154px 0 100px;
 }
 
 @media (min-width: 992px) {
@@ -15,9 +15,5 @@ header {
 }
 
 section {
-  padding: 50px 0;
-}
-
-section-large {
   padding: 150px 0;
 }
