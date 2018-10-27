@@ -10626,7 +10626,9 @@ $(document).on("ready", mainFunction.init);
 }(jQuery));
 
 
-
+$('body').on('hidden.bs.modal', '.modal', function () {
+$('video').trigger('pause');
+});
 
 
 return jQuery;

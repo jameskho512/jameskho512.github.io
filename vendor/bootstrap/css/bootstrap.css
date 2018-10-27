@@ -6457,6 +6457,7 @@ button.bg-dark:focus {
 video {
   width: 100%    !important;
   height: auto   !important;
+	    max-height: calc(100vh - 225px);
 }
 
 .embed-responsive-21by9::before {
