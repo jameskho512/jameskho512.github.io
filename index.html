@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
   <head>
 
     <meta charset="utf-8">
@@ -8,23 +8,32 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	
     <title>James Ho</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/half-slider.css" rel="stylesheet">
-	  
+	
+    <link href="vendor/bootstrap/css/addon.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-center" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">James Ho</a>
+	    <form method="get" action="jhoresume.pdf">
+		<button class="btn btn-outline-light" type="submit" href="jhoresume.pdf">Download Resume</button>
+		</form>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -52,8 +61,7 @@
     <header class="bg-primary">
       <div class="container text-center text-white">
         <h1>James Ho</h1>
-        <p class="lead">4th Year Mechanical Engineering Student<br>
-						UC Santa Barbara
+        <p class="h6">Mechanical Engineer in Los Angeles, California<br>
 		</div>
     </header>
 
@@ -62,7 +70,7 @@
       	<div class="container">
         	<div class="row">
          	 <div class="col-lg-12 mx-auto ">
-          	  <h2>About Me</h2>
+          	  <h4>About Me</h4>
           	  <p class="lead">I am a fourth year mechanical engineering student at UC Santa Barbara, specializing in CAD design and machine shop fabrication. Currently interning as a Mechanical Engineer at Santa Barbara Infrared, inc.</p>
 			  </div>
 			</div>
@@ -76,7 +84,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-0">
-            <h2>Project Showcase</h2>
+            <h4>Project Showcase</h4>
 
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bird">VIDEO - Dancing Robot Bird</button>
@@ -157,6 +165,7 @@
 <br>
 <br>
 
+
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -165,9 +174,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
 			
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-
-          <!-- Slide One - Set the background image for this slide in the line below -->
+          <!-- Slide 1 - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('https://i.imgur.com/nmAgAWc.png')">
             <div class="carousel-caption d-none d-md-block text-dark">
               <h3>Electric Bicycle</h3>
@@ -175,9 +182,7 @@
             </div>
           </div>
 
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-
-          <!-- Slide Four - Set the background image for this slide in the line below -->
+          <!-- Slide 2 - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('img/whiteboard.png')">
             <div class="carousel-caption d-none d-md-block text-dark">
               <h3>Automatic White Board Eraser</h3>
@@ -207,7 +212,7 @@
         <div class="row">
 <!--        <div class="text-center">-->
           <div class="col-lg-12 mx-auto">
-            <h2>Resume</h2>
+            <h4>Resume</h4>
             <p class="text-center">
 			  <a href="jhoresume.pdf">
                 <img href="jhoresume.pdf" width="50%" src="img/jhoresume.png">
@@ -224,9 +229,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-0">
-            <h2>Contact</h2>
-            <p class="lead">Los Angeles, California<br>
-							jamesho512@gmail.com<br>
+            <h4>Contact</h4>
+            <p class="lead">jamesho512@gmail.com<br>
 			  				(626) 731-2402</p>
 			</div>
         </div>
@@ -236,8 +240,8 @@
     <!-- Footer -->
     <footer class="py-4 bg-dark">
       <div class="container">
-		  <p class="m-0 text-center text-white">&copy; James Ho 2018</p>
-		  <p class="m-0 text-center text-white"></p>
+		  <p class="m-0 text-left text-white">&copy; James Ho 2019</p>
+		  <p class="m-0 text-right text-white"></p>
       </div>
       <!-- /.container -->
     </footer>
