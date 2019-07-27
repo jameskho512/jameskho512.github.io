@@ -18,11 +18,11 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
+    <link href="vendor/bootstrap/css/bootstrap-horizon.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/half-slider.css" rel="stylesheet">
-	
+	<link href="vendor/bootstrap/css/card.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/addon.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/card.css" rel="stylesheet">
 	</head>
 
  	<body id="page-top">
@@ -66,19 +66,48 @@
 		</div>
     </header>
 
-    <!-- About -->
+    <!-- Projects -->
     <section id="projects" class="bg-custom">
       	<div class="container">
 			<h4>Project Showcase</h4>
-			<div class="row">
+			<div class="row row-horizon">
+				<div class="scrolling-wrapper">
+			    <div class="d-flex flex-row flex-nowrap">
 				<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
 					<div class="card">
 						<img class="card-img-top" src="img/ebike.png">
 						<div class="card-block">
-							<h4 class="card-title mt-3">Electric Bicycle</h4>
+							<h4 class="card-title mt-2">Electric Bicycle</h4>
 							<div class="card-text">
 								Designed and built an electric bike from scratch.
 							</div>
+						</div>
+						<div class="card-footer">
+							<span>Summer 2018</span>
+							<button class="btn btn-primary float-right btn-sm" data-toggle="modal" data-target="#bike">Expand</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+					<div class="card">
+						<img class="card-img-top" src="img/whiteboard.png">
+						<div class="card-block">
+							<h4 class="card-title mt-2">White Board Eraser</h4>
+							<div class="card-text">Created an automatic white board eraser powered by Arduino and two DC motors.</div>
+						</div>
+						<div class="card-footer">
+							<span>Spring 2018</span>
+							<button class="btn btn-primary float-right btn-sm">Expand</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+					<div class="card">
+						<img class="card-img-top" src="img/whiteboard.png">
+						<div class="card-block">
+							<h4 class="card-title mt-2">RoboRat - Cheese Grabber</h4>
+							<div class="card-text">
+								Used arduino to implement control systems to navigate an obstacle course and obtain "cheese" blocks.</div>
 						</div>
 						<div class="card-footer">
 							<span>Summer 2018</span>
@@ -90,24 +119,8 @@
 					<div class="card">
 						<img class="card-img-top" src="img/whiteboard.png">
 						<div class="card-block">
-							<h4 class="card-title mt-3">Whtie Board Eraser</h4>
-							<div class="card-text">
-								Created an automatic white board eraser powered by Arduino and two DC motors.
-							</div>
-						</div>
-						<div class="card-footer">
-							<span>Spring 2018</span>
-							<button class="btn btn-primary float-right btn-sm">Expand</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-					<div class="card">
-						<img class="card-img-top" src="https://picsum.photos/200/150/?random">
-						<div class="card-block">
-							<h4 class="card-title mt-3">Something</h4>
-							<div class="card-text">
-								Designed and built an electric bike from scratch.  
+							<h4 class="card-title mt-2">Dancing Robot Bird</h4>
+							<div class="card-text">Designed and built an electric bike from scratch.  
 							</div>
 						</div>
 						<div class="card-footer">
@@ -116,13 +129,26 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+									<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
 					<div class="card">
-						<img class="card-img-top" src="https://picsum.photos/200/150/?random">
+						<img class="card-img-top" src="img/whiteboard.png">
 						<div class="card-block">
-							<h4 class="card-title mt-3">Something Else</h4>
-							<div class="card-text">
-								Designed and built an electric bike from scratch.  
+							<h4 class="card-title mt-2">Dancing Robot Bird</h4>
+							<div class="card-text">Designed and built an electric bike from scratch.  
+							</div>
+						</div>
+						<div class="card-footer">
+							<span>Summer 2018</span>
+							<button class="btn btn-primary float-right btn-sm">Expand</button>
+						</div>
+					</div>
+				</div>
+									<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+					<div class="card">
+						<img class="card-img-top" src="img/whiteboard.png">
+						<div class="card-block">
+							<h4 class="card-title mt-2">Dancing Robot Bird</h4>
+							<div class="card-text">Designed and built an electric bike from scratch.  
 							</div>
 						</div>
 						<div class="card-footer">
@@ -133,6 +159,7 @@
 				</div>
 			</div>
 		</div>
+		</div>
     </section>
 
 
@@ -140,13 +167,32 @@
     <!-- Projects -->
     <section id="experience" class="bg-custom font-family-sans-serif">
       <div class="container">
-<!--		<div class="row">
--->          <div class="col-lg-12 mx-0">
+		<div class="row">
+          <div class="col-lg-12 mx-0">
             <h4>Experience</h4>
 
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bird">VIDEO - Dancing Robot Bird</button>
+							  <div class="modal fade" id="bike" role="dialog">
+								<div class="modal-dialog modal-dialog-centered modal-lg">
 
+								  <!-- Modal content-->
+								  <div class="modal-content bg-dark">
+									<div class="modal-header">
+							<!--          <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+							<!--          <h4 class="modal-title">Modal Header</h4>-->
+									</div>
+									<div class="modal-body">
+											<video width="1200" height="550" controls>
+											  <source src="video/bike.mp4" type="video/mp4">
+											</video>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								</div>
+							  </div>
 	  <!-- Modal -->
 		  <div class="modal fade" id="bird" role="dialog">
 			<div class="modal-dialog modal-dialog-centered modal-lg">
@@ -191,47 +237,12 @@
 				  <button type="button" class="btn btn btn-outline-light" data-dismiss="modal">Close</button>
 				</div>
 			  </div>
-					</div>
+			  </div>
 			  </div>	  	  
 			  
-			  
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bike">VIDEO - Electric Bicycle</button>
-
   <!-- Modal -->
-  <div class="modal fade" id="bike" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-    
-      <!-- Modal content-->
-      <div class="modal-content bg-dark">
-        <div class="modal-header">
-<!--          <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-<!--          <h4 class="modal-title">Modal Header</h4>-->
-        </div>
-        <div class="modal-body">
-			    <video width="1200" height="550" controls>
-				  <source src="video/bike.mp4" type="video/mp4">
-				</video>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-		
     </div>
-  </div>
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-
-        </ol>
-        <div class="carousel-inner" role="listbox">
-						  
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
     </section>
 
@@ -256,11 +267,34 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-0">
-			<div class="container">
-
-
-					</div>
+            <h4>Skills</h4>
 		  		</div>
+			<div class="container-fluid">
+    <div class="row flex-row flex-nowrap row-horizon">
+        <div class="col-3">
+            <div class="card card-block">Card</div>
+        </div>
+        <div class="col-3">
+            <div class="card card-block">Card</div>
+        </div>
+        <div class="col-3">
+            <div class="card card-block">Card</div>
+        </div>
+        <div class="col-3">
+            <div class="card card-block">Card</div>
+        </div>
+        <div class="col-3">
+            <div class="card card-block">Card</div>
+        </div>
+        <div class="col-3">
+            <div class="card card-block">Card</div>
+        </div>
+        <div class="col-3">
+            <div class="card card-block">Card</div>
+        </div>
+        ...
+    </div>
+</div>
 			</div>
       </div>
     </section>

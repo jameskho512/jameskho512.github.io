@@ -51,8 +51,8 @@ h6, .h6 {
 
 .container {
   width: 100%;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -204,3 +204,18 @@ h6, .h6 {
   padding: 1rem;
 }
 
+video {
+  width: 100%    !important;
+  height: auto   !important;
+  max-height: calc(100vh - 225px);
+}
+
+.scrolling-wrapper-flexbox .scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .card {
+    display: inline-block;
+  }
+}

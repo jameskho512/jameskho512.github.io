@@ -10626,10 +10626,10 @@ $(document).on("ready", mainFunction.init);
 }(jQuery));
 
 
-$('body').on('hidden.bs.modal', '.modal', function () {
-$('video').trigger('pause');
-});
+$('body').on('hide.bs.modal', '.modal', function () {
+$('video').trigger('pause')
 
+});
 
 return jQuery;
 } );
