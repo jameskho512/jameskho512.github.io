@@ -4551,6 +4551,7 @@ input[type="button"].btn-block {
 }
 
 .card {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   display: -ms-flexbox;
   display: flex;

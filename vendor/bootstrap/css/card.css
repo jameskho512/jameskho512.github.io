@@ -17,6 +17,7 @@ h5 {
     border: none;
     border-radius: .3rem;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    min-width: 250px
 }
 
 .card-block {
